@@ -8,6 +8,9 @@ This overlay adds extended filament profiles for Polymaker product lines to the 
 
 - **Panchroma** - New high-speed aesthetic PLA line (standard temp: 220°C, volumetric speed up to 28mm³/s)
 - **Panchroma Matte** - Matte finish variant of Panchroma (standard temp: 220°C)
+- **Panchroma Satin** - Smooth satin finish (formerly PolyTerra PLA+, standard temp: 220°C)
+- **Panchroma Silk** - High gloss finish (formerly PolyLite Silk, optimized for 230°C, slower speeds for shine)
+- **Panchroma Marble** - Marble/stone-like appearance (formerly PolyTerra Marble, standard temp: 220°C)
 - **PolyLite** - Legacy standard PLA line (standard temp: 220°C) - for backward compatibility
 - **PolyTerra** - Legacy eco-friendly PLA line (lower temp: 215°C) - for backward compatibility
 - **PolyMax** - Tough PLA line (higher temp: 225°C) - still actively sold
@@ -56,6 +59,9 @@ When programming RFID tags, use these values:
 Supported `subtype` values for PLA:
 - `Panchroma` - Current product line (recommended)
 - `Panchroma Matte` - Matte finish variant
+- `Panchroma Satin` - Smooth satin finish (formerly PolyTerra PLA+)
+- `Panchroma Silk` - High gloss finish (formerly PolyLite Silk)
+- `Panchroma Marble` - Marble/stone appearance (formerly PolyTerra Marble)
 - `PolyLite` - Legacy support
 - `PolyTerra` - Legacy support
 - `PolyMax` - Still available
@@ -64,11 +70,11 @@ Supported `subtype` values for PLA:
 
 The profiles will be available in the printer's UI when selecting filament with:
 - **Vendor:** Polymaker
-- **Type:** PLA, anchroma, Panchroma Matte, PolyLite, PolyTerra, PolyMax
+- **Type:** PLA, PETG, or ABS
+- **Sub Type:** Panchroma, Panchroma Matte, Panchroma Satin, Panchroma Silk, Panchroma Marble, PolyLite, PolyTerra, PolyMax
 
 ## Product Line Changes
 
-**Note:** Polymaker has consolidated their aesthetic PLA lines under the new **Panchroma™** brand. The previous PolyLite™ PLA and PolyTerra™ PLA color options have been replaced by Panchroma. This overlay includes profiles for both the new Panchroma line and legacy products for backward compatibility with existing RFID tags and user preferences.
 - **Sub Type:** PolyTerra, PolyLite, PolyMax, or Panchroma
 
 ## Profile Sources
