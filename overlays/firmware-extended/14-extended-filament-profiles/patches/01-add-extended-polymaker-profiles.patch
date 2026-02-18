@@ -1,14 +1,16 @@
 diff -uNr rootfs.original/home/lava/klipper/klippy/extras/filament_parameters.py rootfs/home/lava/klipper/klippy/extras/filament_parameters.py
 --- rootfs.original/home/lava/klipper/klippy/extras/filament_parameters.py	2025-11-06 05:01:19.000000000 +0100
 +++ rootfs/home/lava/klipper/klippy/extras/filament_parameters.py	2026-02-17 20:30:00.000000000 +0100
-@@ -13,7 +13,7 @@
+@@ -10,7 +10,7 @@
+ FILAMENT_FLOW_K_MIN_UNKNOWN                     = 0.005
+ FILAMENT_FLOW_K_MAX_UNKNOWN                     = 0.065
  FILAMENT_IS_SOFT_UNKNOWN                        = False
 -FILAMENT_PARAMETER_VERSION                      = '0.0.7'
 +FILAMENT_PARAMETER_VERSION                      = '0.0.8'
  
  FILAMENT_PARA_CFG_FILE                          = 'filament_parameters.json'
  FILAMENT_PARA_CFG_DEFAULT = {
-@@ -74,6 +74,102 @@
+@@ -82,6 +82,102 @@
                  'flow_k_min': 0.005,
                  'flow_k_max': 0.025,
              },
@@ -111,9 +113,9 @@ diff -uNr rootfs.original/home/lava/klipper/klippy/extras/filament_parameters.py
          },
      },
      'PLA-CF': {
-@@ -209,6 +305,30 @@
-                 'flow_k_min': 0.038,
-                 'flow_k_max': 0.062,
+@@ -221,6 +317,30 @@
+                 'flow_k_min': 0.01,
+                 'flow_k_max': 0.03,
              },
 +            'sub_PolyLite': {
 +                'load_temp': 250,
@@ -139,7 +141,9 @@ diff -uNr rootfs.original/home/lava/klipper/klippy/extras/filament_parameters.py
 +                'flow_k_min': 0.03,
 +                'flow_k_max': 0.055,
 +            },
-             'sub_HF': {
+         },
+     },
+     'PETG-CF': {
                  'load_temp': 250,
                  'unload_temp': 250,
 @@ -331,6 +451,30 @@
@@ -162,11 +166,11 @@ diff -uNr rootfs.original/home/lava/klipper/klippy/extras/filament_parameters.py
 +                'load_temp': 250,
 +                'unload_temp': 250,
 +                'clean_nozzle_temp': 220,
-+                'is_soft': False,
-+                'flow_temp': 265,
-+                'flow_k': 0.022,
-+                'flow_slow_v': 0.8,
-+                'flow_fast_v': 8.0,
+                'flow_k': 0.02,
+                'flow_slow_v': 0.8,
+                'flow_fast_v': 8.0,
+                'flow_k_min': 0.012,
+                'flow_k_max': 0.028,
 +                'flow_k_min': 0.014,
 +                'flow_k_max': 0.030,
 +            },
