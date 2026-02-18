@@ -1,7 +1,7 @@
 diff -uNr rootfs.original/home/lava/klipper/klippy/extras/filament_parameters.py rootfs/home/lava/klipper/klippy/extras/filament_parameters.py
 --- rootfs.original/home/lava/klipper/klippy/extras/filament_parameters.py	2025-11-06 05:01:19.000000000 +0100
 +++ rootfs/home/lava/klipper/klippy/extras/filament_parameters.py	2026-02-17 20:30:00.000000000 +0100
-@@ -74,6 +74,57 @@
+@@ -74,6 +74,111 @@
                  'flow_k_min': 0.005,
                  'flow_k_max': 0.025,
              },
@@ -28,7 +28,8 @@ diff -uNr rootfs.original/home/lava/klipper/klippy/extras/filament_parameters.py
 +                'flow_fast_v': 8.0,
 +                'flow_k_min': 0.010,
 +                'flow_k_max': 0.026,
-+            },+            'sub_Panchroma Satin': {
++            },
++            'sub_Panchroma Satin': {
 +                'load_temp': 250,
 +                'unload_temp': 250,
 +                'clean_nozzle_temp': 170,
@@ -63,7 +64,8 @@ diff -uNr rootfs.original/home/lava/klipper/klippy/extras/filament_parameters.py
 +                'flow_fast_v': 8.0,
 +                'flow_k_min': 0.010,
 +                'flow_k_max': 0.026,
-+            },+            'sub_PolyLite': {
++            },
++            'sub_PolyLite': {
 +                'load_temp': 250,
 +                'unload_temp': 250,
 +                'clean_nozzle_temp': 170,
